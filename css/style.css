@@ -11,7 +11,7 @@ body{
 /*Global*/
 .container{
   width:80%;
-  margin:auto;
+  margin: 0 auto 0 auto;
   overflow: hidden;
 }
 
@@ -52,12 +52,12 @@ header #logo{
   /*margin: 0;  - nie działa jak poniżej*/
 }
 header #logo h1{
-  margin: 0;
+  margin: 0 0 -48px 0;
 }
 
 header nav{
   float: right;
-  margin: 15px 0 0 0 ;
+  margin: 48px 0 4px 0 ;
   /*margin-bottom: 0px;*/
   /*margin-right: 10%;*/
 }
@@ -73,12 +73,12 @@ header li{
   float: left; /*do prawej, obok siebie, NIE jeden pod drugim*/
   display: inline;/*bez kropek w liscie*/
   padding: 0 25px 0 25px;
-
+  font-weight: bold;
 }
 
 header .highlight, header .current{
   color: #7EB5D6;
-  font-weight: bold;
+
 }
 
 header a:hover {
@@ -92,6 +92,7 @@ header a:hover {
   background: url('../img/stol.jpg') no-repeat 0 -450px;
   text-align: center;
   color: #000000;
+  /* width: 100%; */
 
 }
 
@@ -187,6 +188,7 @@ footer{
 
 @media(max-width: 768px)  {
   header #branding,
+  header #logo,
   header nav,
   header nav li,
   #newsletter h1,
@@ -199,8 +201,17 @@ footer{
     width: 100%;
   }
 
+  .container{
+    width: 90%;
+  }
+
 header {
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
+}
+
+header nav{
+  /* margin: 45px 0 2px 0; */
+  /* z-index: 1000; */
 }
 
 #showcase h1{
