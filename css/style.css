@@ -6,6 +6,7 @@ body{
   padding:0;
   margin:0;
   background: #e7f2f8;
+  min-width: 400px;
 }
 
 /*Global*/
@@ -26,7 +27,7 @@ ul{
   border: 1;
   border-color: #e7f2f8;
   padding: 0 20px 0 20px;
-  color: #e7f2f8;
+  color: #fff;
   border-radius: 6px 0 6px 0;
   box-shadow: 3px 3px 3px black;
 }
@@ -80,7 +81,7 @@ nav li{
   float: left; /*do prawej, obok siebie, NIE jeden pod drugim*/
   display: inline-block;/*bez kropek w liscie*/
   padding: 2px 20px 2px 20px;
-  margin: 0 2px 1px 2px;
+  margin: 2px 2px 1px 2px;
   border-radius: 6px 0 6px 0;
   font-weight: bold;
   background: rgba(0, 0, 0, 0.4);
@@ -220,7 +221,7 @@ footer{
 
 /*Media Queries*/
 
-@media(max-width: 768px)  {
+@media(max-width: 800px)  {
   header #branding,
   header #logo,
   nav,
@@ -235,9 +236,17 @@ footer{
     width: 100%;
   }
 
+  .button_1{
+    height: 50px;
+    font-size: 120%;
+    text-shadow: 2px 2px 1px #274257;
+  }
+
   nav li{
     float: none;
-    margin: 0 auto;
+    padding: 10px 10px 10px 10px;
+    margin-top: 6px;
+    /* margin: 0 auto; */
   }
 
   nav .current{
@@ -263,14 +272,14 @@ header nav{
 
 #newsletter button, .quote button{
   display:block;
-  width: 99%;
+  width: 82%;
   margin: 5px auto;
 }
 
 #newsletter form input[type="email"],
 .quote input,
 .quote textarea{
-  width: 97%;
+  width: 80%;
   margin-bottom: 5px;
 }
 
