@@ -23,10 +23,12 @@ ul{
 .button_1{
   height: 38px;
   background: #7EB5D6;
-  border: 0;
+  border: 1;
+  border-color: #e7f2f8;
   padding: 0 20px 0 20px;
   color: #e7f2f8;
   border-radius: 6px 0 6px 0;
+  box-shadow: 3px 3px 3px black;
 }
 
 .dark{
@@ -138,7 +140,7 @@ nav li:hover {
 
 /* newsletter*/
 #newsletter {
-  padding: 15px;
+  padding: 15px 0 15px 0;
   color: #e7f2f8;
   background: #274257;
   background: -moz-linear-gradient(to top left, #274257 40%, #7EB5D6);
@@ -151,7 +153,7 @@ nav li:hover {
 
 #newsletter form {
   float: right;
-  margin-top: 20px;
+  margin: 20px 4px 4px 0;
 }
 
 #newsletter input[type="email"]{
@@ -261,14 +263,14 @@ header nav{
 
 #newsletter button, .quote button{
   display:block;
-  width: 100%;
-  margin-top: 5px;
+  width: 99%;
+  margin: 5px auto;
 }
 
 #newsletter form input[type="email"],
 .quote input,
 .quote textarea{
-  width: 100%;
+  width: 97%;
   margin-bottom: 5px;
 }
 
