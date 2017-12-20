@@ -39,6 +39,9 @@ ul{
 
 /*Header*/
 header{
+  background: #274257;
+  background: -moz-linear-gradient(to bottom right, #274257 40%, #7EB5D6);
+  background: -webkit-linear-gradient(to bottom right, #274257 40%, #7EB5D6);
   background: linear-gradient(to bottom right, #274257 40%, #7EB5D6);
   color: #e7f2f8;
   padding-top:15px;
@@ -59,7 +62,7 @@ header #logo h1{
 
 nav{
   float: right;
-  margin: 48px 0 2px 0 ;
+  margin: 48px 0 0 0 ;
   /*margin-bottom: 0px;*/
   /*margin-right: 10%;*/
 }
@@ -137,6 +140,9 @@ nav li:hover {
 #newsletter {
   padding: 15px;
   color: #e7f2f8;
+  background: #274257;
+  background: -moz-linear-gradient(to top left, #274257 40%, #7EB5D6);
+  background: -webkit-linear-gradient(to top left, #274257 40%, #7EB5D6);
   background: linear-gradient(to top left, #274257 40%, #7EB5D6);
 }
 #newsletter h1{
