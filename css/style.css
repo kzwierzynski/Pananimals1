@@ -26,6 +26,7 @@ ul{
   border: 0;
   padding: 0 20px 0 20px;
   color: #e7f2f8;
+  border-radius: 6px 0 6px 0;
 }
 
 .dark{
@@ -38,7 +39,7 @@ ul{
 
 /*Header*/
 header{
-  background: #274257;
+  background: linear-gradient(to bottom right, #274257 40%, #7EB5D6);
   color: #e7f2f8;
   padding-top:15px;
   min-height:70px;
@@ -55,34 +56,51 @@ header #logo h1{
   margin: 0 0 -48px 0;
 }
 
-header nav{
+nav{
   float: right;
-  margin: 48px 0 4px 0 ;
+  margin: 48px 0 2px 0 ;
   /*margin-bottom: 0px;*/
   /*margin-right: 10%;*/
 }
 
-header a{
+nav a{
   color:	#e7f2f8;
   text-decoration: none;
   text-transform:uppercase;
   font: 18px;
 }
 
-header li{
+nav li{
   float: left; /*do prawej, obok siebie, NIE jeden pod drugim*/
-  display: inline;/*bez kropek w liscie*/
-  padding: 0 25px 0 25px;
+  display: inline-block;/*bez kropek w liscie*/
+  padding: 2px 20px 2px 20px;
+  margin: 0 2px 1px 2px;
+  border-radius: 6px 0 6px 0;
   font-weight: bold;
+  background: rgba(0, 0, 0, 0.4);
 }
 
-header .highlight, header .current{
+.menu-btn .fa{
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  text-align:center;
+  line-height: 30px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+
+header .highlight, nav .current{
   color: #7EB5D6;
-
 }
+/* nav .current{
+  color: rgba(0,0,0,1);
+} */
 
-header a:hover {
-  color: #CBCBCB;
+nav li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #333;
 }
 
 /* showcase */
@@ -111,7 +129,7 @@ header a:hover {
 #newsletter {
   padding: 15px;
   color: #e7f2f8;
-  background: #274257;
+  background: linear-gradient(to top left, #274257 40%, #7EB5D6);
 }
 #newsletter h1{
   float: left;
@@ -189,8 +207,8 @@ footer{
 @media(max-width: 768px)  {
   header #branding,
   header #logo,
-  header nav,
-  header nav li,
+  nav,
+  /* nav li, */
   #newsletter h1,
   #newsletter form,
   #boxes .box,
@@ -199,6 +217,15 @@ footer{
     float: none;
     text-align: center;
     width: 100%;
+  }
+
+  nav li{
+    float: none;
+    margin: 0 auto;
+  }
+
+  nav .current{
+    color: #7EB5D6;
   }
 
   .container{
@@ -221,6 +248,7 @@ header nav{
 #newsletter button, .quote button{
   display:block;
   width: 100%;
+  margin-top: 5px;
 }
 
 #newsletter form input[type="email"],
